@@ -306,6 +306,18 @@
             <version>${logback-classic.version}</version>
         </dependency>
 
+	     <!-- Passwordless identity provider for postgres. Only needed if context is deployed with the app -->
+        <dependency>
+            <groupId>com.azure</groupId>
+            <artifactId>azure-identity-extensions</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.5.1</version>
+        </dependency>
+
     </dependencies>
 
     <build>
